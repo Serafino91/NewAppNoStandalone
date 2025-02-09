@@ -1,0 +1,19 @@
+.btn-bd-primary {
+  font-weight: 600;
+  color: #fff;
+  background-color: #ff7f50;
+  border-color: #ff7f50;
+}
+
+/*.btn-bd-primary:hover {*/
+/*  color: #fff;*/
+/*  background-color: #ff6347;*/
+/*  border-color: #ff6347;*/
+/*}*/
+
+/*.btn-bd-primary:active,*/
+/*.btn-bd-primary.active {*/
+/*  color: #fff;*/
+/*  background-color: #ff4500;*/
+/*  border-color: #ff4500;*/
+/*}*/

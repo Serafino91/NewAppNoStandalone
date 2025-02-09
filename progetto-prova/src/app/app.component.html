@@ -1,7 +1,12 @@
+<header></header>
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
-      <h2>I'm working!</h2>
+    <div class="col-md-5" *ngFor="let button of shoppingList ">
+      <button-sc nomeButton= '{{button.nome}}' colorButton='{{button.colore}}'></button-sc>
+    </div>
+
+    <div class="col-md-5" *ngFor="let button2 of recipeBookList ">
+      <button-sc nomeButton= '{{button2.nome}}' colorButton='{{button2.colore}}'></button-sc>
     </div>
   </div>
 </div>

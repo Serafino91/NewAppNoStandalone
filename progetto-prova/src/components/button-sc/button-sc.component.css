@@ -1,0 +1,67 @@
+.btn-bd-primary {
+  font-weight: 600;
+  color: #fff;
+  background-color: #ff7f50;
+  border-color: #ff7f50;
+}
+
+.btn-bd-primary:hover {
+  color: #fff;
+  background-color: #ff6347;
+  border-color: #ff6347;
+}
+
+.btn-bd-primary:active,
+.btn-bd-primary.active {
+  color: #fff;
+  background-color: #ff4500;
+  border-color: #ff4500;
+}
+
+.btn-bd-brown {
+  font-weight: 600;
+  color: #fff; /* Testo bianco */
+  background-color: #a0522d; /* Colore marrone chiaro di base */
+  border-color: #a0522d; /* Colore del bordo marrone chiaro */
+}
+
+.btn-bd-brown:hover {
+  color: #fff; /* Testo bianco al passaggio del mouse */
+  background-color: #8b4513; /* Colore marrone più scuro al passaggio del mouse */
+  border-color: #8b4513; /* Colore del bordo più scuro al passaggio del mouse */
+}
+
+.btn-bd-brown:active,
+.btn-bd-brown.active {
+  color: #fff; /* Testo bianco quando il bottone è attivo */
+  background-color: #654321; /* Colore marrone ancora più scuro quando il bottone è attivo */
+  border-color: #654321; /* Colore del bordo ancora più scuro quando il bottone è attivo */
+}
+
+
+.btn-bd-purple {
+  font-weight: 600;
+  color: #fff; /* Testo bianco */
+  background-color: #8a2be2; /* Colore viola di base */
+  border-color: #8a2be2; /* Colore del bordo viola */
+}
+
+.btn-bd-purple:hover {
+  color: #fff; /* Testo bianco al passaggio del mouse */
+  background-color: #7b1fa2; /* Colore viola più scuro al passaggio del mouse */
+  border-color: #7b1fa2; /* Colore del bordo più scuro al passaggio del mouse */
+}
+
+.btn-bd-purple:active,
+.btn-bd-purple.active {
+  color: #fff; /* Testo bianco quando il bottone è attivo */
+  background-color: #6a1b9a; /* Colore viola ancora più scuro quando il bottone è attivo */
+  border-color: #6a1b9a; /* Colore del bordo ancora più scuro quando il bottone è attivo */
+}
+.btn-50 {
+  width: 75%; /* Occupa il 25% della larghezza del contenitore */
+  margin-top: 10px;    /* Margin superiore */
+  margin-right: 15px;  /* Margin destro */
+  margin-bottom: 10px; /* Margin inferiore */
+  margin-left: 15px;   /* Margin sinistro */
+}
