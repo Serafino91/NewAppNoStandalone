@@ -1,12 +1,23 @@
+<!--TODO da capire come mai non vedo i miei button ordinati per bene-->
+<!--<header></header>-->
+<!--<div class="container">-->
+<!--  <div class="row">-->
+<!--    <div class="col-md-6 " *ngFor="let button of shoppingList ">-->
+<!--      <button-sc nomeButton= '{{button.nome}}' colorButton='{{button.colore}}'></button-sc>-->
+<!--    </div>-->
+
+<!--    <div class="col-md-6 " *ngFor="let button2 of recipeBookList ">-->
+<!--      <button-sc nomeButton= '{{button2.nome}}' colorButton='{{button2.colore}}'></button-sc>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
 <header></header>
 <div class="container">
   <div class="row">
-    <div class="col-md-6 " *ngFor="let button of shoppingList ">
-      <button-sc nomeButton= '{{button.nome}}' colorButton='{{button.colore}}'></button-sc>
-    </div>
-
-    <div class="col-md-6 " *ngFor="let button2 of recipeBookList ">
-      <button-sc nomeButton= '{{button2.nome}}' colorButton='{{button2.colore}}'></button-sc>
+    <div class="col-md-12">
+      <app-recipes></app-recipes>
+      <app-shopping-list></app-shopping-list>
     </div>
   </div>
 </div>
