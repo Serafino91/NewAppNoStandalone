@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  oddNumbers : number[] =[];
+  evenNumbers : number[] =[];
+
+
   title = 'progetto-prova';
   shoppingList: Array<ButtonElement> = [
     new ButtonElement('Shopping List', 'violet'),
@@ -21,6 +25,18 @@ export class AppComponent {
     new ButtonElement('Recipe', 'brown'),
 
   ];
+
+
+  intervalloEmesso(numero:number) {
+    console.log('numero emesso: '+numero);
+    if(numero%2==0){
+      this.evenNumbers.push(numero);
+    } else{
+      this.oddNumbers.push(numero);
+    }
+
+ }
+
 }
 export class ButtonElement {
   nome: String;
@@ -35,4 +51,5 @@ export class ButtonElement {
   getColore(): String{
     return this.colore;
   }
+
 }

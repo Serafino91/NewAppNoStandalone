@@ -11,6 +11,11 @@
 <!--    </div>-->
 <!--  </div>-->
 <!--</div>-->
+<odd></odd>
+<even></even>
+<div>
+  <br>
+</div>
 
 <header></header>
 <div class="container">
@@ -21,3 +26,21 @@
     </div>
   </div>
 </div>
+
+
+
+<div class="row">
+  <div class="col-xs-12">
+    <game-control (intervalloEmesso) = intervalloEmesso($event) ></game-control>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12" >
+    <even *ngFor="let numero of evenNumbers" [even]='numero'></even>
+    <odd *ngFor="let numero of oddNumbers" [odd]="numero"></odd>
+  </div>
+</div>
+
+
+
+

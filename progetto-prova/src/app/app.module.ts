@@ -11,6 +11,9 @@ import { RecipeItemComponent } from '../components/recipes/recipe-list/recipe-it
 import { RecipeListComponent } from '../components/recipes/recipe-list/recipe-list.component';
 import { RecipeDetailComponent } from '../components/recipes/recipe-detail/recipe-detail.component';
 import { FormsModule } from "@angular/forms";
+import {OddComponent} from "../components/odd/odd.component";
+import {EvenComponent} from "../components/even/even.component";
+import {GameControlComponent} from "../components/game-control/game-control.component";
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { FormsModule } from "@angular/forms";
     RecipeDetailComponent,
     RecipeItemComponent,
     ShoppingListComponent,
-    ShoppingEditComponent
+    ShoppingEditComponent,
+    OddComponent,
+    EvenComponent,
+    GameControlComponent
   ],
   imports: [
     BrowserModule,
