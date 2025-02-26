@@ -1,21 +1,30 @@
-<!--TODO da capire come mai non vedo i miei button ordinati per bene-->
 <!--<header></header>-->
 <!--<div class="container">-->
 <!--  <div class="row">-->
-<!--    <div class="col-md-6 " *ngFor="let button of shoppingList ">-->
-<!--      <button-sc nomeButton= '{{button.nome}}' colorButton='{{button.colore}}'></button-sc>-->
+<!--    <div class="col-md-6" >-->
+<!--      <button-sc *ngFor="let button of shoppingList " nomeButton= '{{button.nome}}' colorButton='{{button.colore}}'></button-sc>-->
 <!--    </div>-->
 
-<!--    <div class="col-md-6 " *ngFor="let button2 of recipeBookList ">-->
-<!--      <button-sc nomeButton= '{{button2.nome}}' colorButton='{{button2.colore}}'></button-sc>-->
+<!--    <div class="col-md-6">-->
+<!--      <button-sc *ngFor="let button2 of recipeBookList " nomeButton= '{{button2.nome}}' colorButton='{{button2.colore}}'></button-sc>-->
 <!--    </div>-->
+
+   <!--NOTA avevi fatto una cosa del genere e non riuscivi a vedere i button divisi per colonna in base alle 2 liste che avevi     -->
+        <!--    <div class="col-md-6" *ngFor="let button2 of recipeBookList " >-->
+        <!--      <button-sc  nomeButton= '{{button2.nome}}' colorButton='{{button2.colore}}'></button-sc>-->
+        <!--    </div>-->
+        <!--questo perche' quando inserisci ngFor sul div vai a creare un array di div e quindi non avevo solo le 2 colonne che avevo previsto -->
+
 <!--  </div>-->
 <!--</div>-->
-<odd></odd>
-<even></even>
-<div>
-  <br>
-</div>
+
+
+
+<!--<odd></odd>-->
+<!--<even></even>-->
+<!--<div>-->
+<!--  <br>-->
+<!--</div>-->
 
 <header></header>
 <div class="container">
@@ -28,18 +37,18 @@
 </div>
 
 
-
-<div class="row">
-  <div class="col-xs-12">
-    <game-control (intervalloEmesso) = intervalloEmesso($event) ></game-control>
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-12" >
-    <even *ngFor="let numero of evenNumbers" [even]='numero'></even>
-    <odd *ngFor="let numero of oddNumbers" [odd]="numero"></odd>
-  </div>
-</div>
+<!--esercizio numero pari dispari -->
+<!--<div class="row">-->
+<!--  <div class="col-xs-12">-->
+<!--    <game-control (intervalloEmesso) = intervalloEmesso($event) ></game-control>-->
+<!--  </div>-->
+<!--</div>-->
+<!--<div class="row">-->
+<!--  <div class="col-xs-12" >-->
+<!--    <even *ngFor="let numero of evenNumbers" [even]='numero'></even>-->
+<!--    <odd *ngFor="let numero of oddNumbers" [odd]="numero"></odd>-->
+<!--  </div>-->
+<!--</div>-->
 
 
 
