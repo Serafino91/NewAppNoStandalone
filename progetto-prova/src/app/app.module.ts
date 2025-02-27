@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { CommonModule } from "@angular/common";
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from '../components/header/header.component';
@@ -11,9 +12,10 @@ import { RecipeItemComponent } from '../components/recipes/recipe-list/recipe-it
 import { RecipeListComponent } from '../components/recipes/recipe-list/recipe-list.component';
 import { RecipeDetailComponent } from '../components/recipes/recipe-detail/recipe-detail.component';
 import { FormsModule } from "@angular/forms";
-import {OddComponent} from "../components/odd/odd.component";
-import {EvenComponent} from "../components/even/even.component";
-import {GameControlComponent} from "../components/game-control/game-control.component";
+import { OddComponent} from "../components/odd/odd.component";
+import { EvenComponent } from "../components/even/even.component";
+import { GameControlComponent } from "../components/game-control/game-control.component";
+
 
 @NgModule({
   declarations: [
@@ -32,6 +34,7 @@ import {GameControlComponent} from "../components/game-control/game-control.comp
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     FormsModule,
   ],
   providers: [

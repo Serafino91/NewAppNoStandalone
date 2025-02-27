@@ -36,6 +36,10 @@ export class AppComponent {
     }
 
  }
+  loadedFeature:string = 'recipes'
+  onNavigate(feature: string){
+    this.loadedFeature =feature;
+  }
 
 }
 export class ButtonElement {
@@ -51,5 +55,7 @@ export class ButtonElement {
   getColore(): String{
     return this.colore;
   }
+
+
 
 }
