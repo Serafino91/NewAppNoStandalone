@@ -15,6 +15,7 @@ import { FormsModule } from "@angular/forms";
 import { OddComponent} from "../components/odd/odd.component";
 import { EvenComponent } from "../components/even/even.component";
 import { GameControlComponent } from "../components/game-control/game-control.component";
+import { DropdownDirective } from '../components/shared/dropdown.directive';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { GameControlComponent } from "../components/game-control/game-control.co
     ShoppingEditComponent,
     OddComponent,
     EvenComponent,
-    GameControlComponent
+    GameControlComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
