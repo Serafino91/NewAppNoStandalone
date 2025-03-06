@@ -1,13 +1,28 @@
 import {EventEmitter, Injectable, OnInit, Output} from '@angular/core';
 import {Recipe} from "../components/recipes/recipe.model";
+import { Ingredient } from '../components/shared/ingredient.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RecipeService implements OnInit {
   recipes: Recipe[] = [
-    new Recipe('A Test Recipe', 'This is simply a test', 'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg'),
-    new Recipe('Another Test Recipe', 'This is simply a test', 'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg')
+    new Recipe(
+    'A Test Recipe',
+    'This is simply a test',
+    'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg',
+    [
+      new Ingredient('pippo',5),
+      new Ingredient('pluto',2),
+    ]),
+    new Recipe(
+    'Another Test Recipe',
+    'This is simply a test',
+    'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg',
+    [    
+      new Ingredient('pippo2',5),
+      new Ingredient('pluto3',7),
+    ])
   ];
 
   recipeSelected = new EventEmitter<Recipe>();
