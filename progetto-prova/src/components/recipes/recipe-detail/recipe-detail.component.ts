@@ -16,8 +16,9 @@ export class RecipeDetailComponent implements OnInit {
   }
   
   public pushToShoppingList() {
-    for(let ingredient of this.recipe.ingredients) {
-      this.shoppingListService.addIngredient(ingredient);
-    }
+    // for(let ingredient of this.recipe.ingredients) {
+    //   this.shoppingListService.addIngredient(ingredient);
+    // }
+    this.shoppingListService.addIngredients(this.recipe.ingredients);
   }
 }

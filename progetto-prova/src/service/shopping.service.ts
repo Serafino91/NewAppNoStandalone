@@ -21,6 +21,10 @@ export class ShoppingService {
     this.ingredients.push(ingredient);
     this.ingredientsChanged.emit(this.ingredients.slice()); //NOTA1
   }
+  addIngredients(ingredients: Ingredient[]){
+    this.ingredients.push(...ingredients); // NOTA2
+    this.ingredientsChanged.emit(this.ingredients.slice()); 
+  }
 
   removeIngredient(ingredient: Ingredient){
   if(ingredient) {
@@ -40,4 +44,10 @@ export class ShoppingService {
          e quindi lo passiamo come copia. Quindi per notificare eventuali
          cambiamenti con l'array mi lancio questo evento dove passo array
          aggiornato.   
+
+  NOTA2: praticamente la funzione push di un array permette di inserire piu'
+         elementi in contemporanea su uno stesso array l'unica accortezza e 
+         che non gli posso passare un array nel push ma gli posso passare gli
+         elementi di detto array utilizzando l'operatore ...nomeArray
+
 */
