@@ -16,6 +16,7 @@ import { OddComponent} from "../components/odd/odd.component";
 import { EvenComponent } from "../components/even/even.component";
 import { GameControlComponent } from "../components/game-control/game-control.component";
 import { DropdownDirective } from '../components/shared/dropdown.directive';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { DropdownDirective } from '../components/shared/dropdown.directive';
     BrowserModule,
     CommonModule,
     FormsModule,
+    AppRoutingModule
   ],
   providers: [
     provideClientHydration()
