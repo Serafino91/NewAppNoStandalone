@@ -17,6 +17,7 @@ import { EvenComponent } from "../components/even/even.component";
 import { GameControlComponent } from "../components/game-control/game-control.component";
 import { DropdownDirective } from '../components/shared/dropdown.directive';
 import { AppRoutingModule } from './app-routing.module';
+import {RecipeStartComponent} from "../components/recipes/recipe-start/recipe-start.component";
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { AppRoutingModule } from './app-routing.module';
     RecipeListComponent,
     RecipeDetailComponent,
     RecipeItemComponent,
+    RecipeStartComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
     OddComponent,
